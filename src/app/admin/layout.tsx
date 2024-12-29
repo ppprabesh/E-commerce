@@ -1,6 +1,6 @@
-import { Nav, NavLink } from "../components/Nav";
+import { Nav, NavLink } from "../../components/Nav";
 
-export default function Adminlayout({
+export default function AdminLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
@@ -8,7 +8,7 @@ export default function Adminlayout({
   return (
   <>
   <Nav>
-  <NavLink href="/">Dashboard</NavLink>
+  <NavLink href="/admin">Dashboard</NavLink>
   <NavLink href="/admin/products">Product</NavLink>
   <NavLink href="/admin/users">Customers</NavLink>
   <NavLink href="/admin/order">Sales</NavLink>
